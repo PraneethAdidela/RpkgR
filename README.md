@@ -2,18 +2,21 @@
 
 ## R Package Management for Regulated Environments
 
-RpkgR is an R package designed to simplify package repository management in regulated environments. The package provides tools for dependency resolution, repository creation, repository validation, package installation, bundle management, deployment reporting, and repository health assessment.
+RpkgR is an R package designed to simplify R package management in regulated environments such as SAS Life Science Analytics Framework (LSAF). The package provides tools for creating and managing local R libraries and CRAN-like repositories, supporting offline package installation, dependency resolution, repository validation, repository health assessment, installation bundle creation, deployment reporting, and reproducible package management workflows.
 
 ## Features
 
-* Create and manage local package repositories
-* Resolve package dependencies
+* Create and manage local R libraries
+* Create and maintain CRAN-like repositories
+* Install packages from source in restricted environments
+* Resolve and analyze package dependencies
 * Generate dependency manifests
-* Validate repository completeness
+* Validate repository completeness and integrity
 * Assess repository health
 * Build and install package bundles
 * Generate deployment and repository reports
 * Support reproducible package management workflows
+* Designed for regulated environments such as SAS LSAF
 
 ## Installation
 
