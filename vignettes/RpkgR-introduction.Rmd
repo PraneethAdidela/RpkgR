@@ -1,0 +1,80 @@
+---
+
+title: "Getting Started with RpkgR"
+output: rmarkdown::html_vignette
+vignette: >
+%\VignetteIndexEntry{Getting Started with RpkgR}
+%\VignetteEngine{knitr::rmarkdown}
+\usepackage[utf8]{inputenc}
+---------------------------
+
+# Introduction
+
+RpkgR provides tools for creating, managing, validating, and deploying local R package repositories in regulated and restricted-network environments.
+
+# Repository Creation
+
+Create a local package repository.
+
+```r
+repo_path <- tempdir()
+
+pkgr_create_repo(
+  repo_path = repo_path
+)
+```
+
+# Dependency Resolution
+
+Review package dependencies and repository completeness.
+
+```r
+pkgr_dependency_summary(
+  package = "Tplyr",
+  repo_path = repo_path
+)
+```
+
+# Required Files
+
+Generate a list of package files required for installation.
+
+```r
+pkgr_required_files(
+  package = "Tplyr"
+)
+```
+
+# Repository Validation
+
+Validate repository contents.
+
+```r
+pkgr_validate_repository(
+  repo_path = repo_path
+)
+```
+
+# Repository Health
+
+Assess repository completeness and health.
+
+```r
+pkgr_repository_health(
+  repo_path = repo_path
+)
+```
+
+# Package Bundles
+
+Create package bundles for controlled deployment.
+
+```r
+pkgr_build_bundle(
+  package = "Tplyr"
+)
+```
+
+# Conclusion
+
+RpkgR provides a reproducible framework for package repository management, dependency resolution, validation, deployment, and reporting workflows.

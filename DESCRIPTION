@@ -1,0 +1,32 @@
+Package: RpkgR
+Type: Package
+Title: R Package Management for Regulated Environments
+Version: 1.0.0
+Authors@R: c(
+    person(
+      "Praneethreddy", "Adidela",
+      email = "praneethadidela@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Tools for creating and managing local R package
+    repositories, resolving dependencies, building installation
+    bundles, validating repository completeness, assessing
+    repository health, generating deployment reports, and
+    supporting reproducible package management workflows in
+    regulated environments.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports:
+    utils,
+    tools
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+URL: https://github.com/PraneethAdidela/RpkgR
+BugReports: https://github.com/PraneethAdidela/RpkgR/issues
