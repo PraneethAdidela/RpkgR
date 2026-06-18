@@ -9,12 +9,14 @@ Authors@R: c(
       role = c("aut", "cre")
     )
   )
-Description: Tools for creating and managing local R package
-    repositories, resolving dependencies, building installation
-    bundles, validating repository completeness, assessing
-    repository health, generating deployment reports, and
-    supporting reproducible package management workflows in
-    regulated environments.
+Description: Provides tools for creating and managing local R
+    libraries and CRAN-like repositories in regulated
+    environments such as SAS Life Science Analytics Framework
+    (LSAF). Supports package installation from source,
+    dependency resolution, repository validation, repository
+    health assessment, installation bundle creation, deployment
+    reporting, and reproducible package management workflows for
+    regulated analytics.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
