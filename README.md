@@ -107,4 +107,4 @@ MIT License
 
 ## Author
 
-Praneethreddy Adidela
+Praneeth Adidela
